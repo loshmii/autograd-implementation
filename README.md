@@ -9,7 +9,7 @@ Light implementation of reverse mode of autograd similar to those found in ML Py
 - Gradient computation using topological sort on directed acyclic graphs 
 
 ## Usage example
-# Create nodes
+### Create nodes
 a = Value(1)
 b = Value(2)
 c = a * b
@@ -18,9 +18,9 @@ e = c**d
 h = 2**e     
 h.backward()  # Compute gradients
 
-# Visualize computational graph
+### Visualize computational graph
 print_graph(h)
 
-# Get gradient 
+### Get gradient 
 print(f"Gradient of a: {a.grad}")
 print(f"Gradient of b: {b.grad}")
